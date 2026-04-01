@@ -6,4 +6,7 @@
 
 .main {
     flex: 1;
+    padding-top: 64px; /* altura de la Navbar */
+    position: relative;
+    z-index: 1;
 }
