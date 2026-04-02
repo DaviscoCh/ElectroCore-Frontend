@@ -15,7 +15,11 @@
     gap: 2rem;
 }
 
-.filterGroup {}
+.filterGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
 
 .filterTitle {
     font-family: var(--font-mono);
