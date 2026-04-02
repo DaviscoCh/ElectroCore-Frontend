@@ -1,0 +1,134 @@
+.page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1.5rem;
+}
+
+.card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 460px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.logo {
+    font-family: var(--font-title);
+    font-size: 1.8rem;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+}
+
+.logo span {
+    color: var(--accent2);
+}
+
+.subtitle {
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.label {
+    font-size: 0.8rem;
+    font-family: var(--font-mono);
+    color: var(--muted);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.input {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+    font-family: var(--font-main);
+    outline: none;
+    transition: var(--transition);
+    border-radius: var(--radius);
+    width: 100%;
+}
+
+.input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px rgba(0, 255, 224, 0.1);
+}
+
+.input::placeholder {
+    color: var(--muted);
+}
+
+.error {
+    background: rgba(255, 79, 94, 0.1);
+    border: 1px solid rgba(255, 79, 94, 0.3);
+    color: var(--accent2);
+    padding: 0.75rem 1rem;
+    font-size: 0.85rem;
+    border-radius: var(--radius);
+}
+
+.btnPrimary {
+    background: var(--accent);
+    color: #000;
+    padding: 0.85rem;
+    font-weight: 800;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: none;
+    transition: var(--transition);
+    border-radius: var(--radius);
+    margin-top: 0.5rem;
+}
+
+.btnPrimary:hover:not(:disabled) {
+    box-shadow: var(--glow);
+    transform: translateY(-1px);
+}
+
+.btnPrimary:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: var(--muted);
+    font-size: 0.85rem;
+}
+
+.footerLink {
+    color: var(--accent);
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.footerLink:hover {
+    text-decoration: underline;
+}
