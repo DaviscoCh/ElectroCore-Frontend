@@ -1,0 +1,152 @@
+.page { padding: 2rem 0 4rem; }
+
+.titulo {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+/* ── TARJETA ─────────────────────── */
+.card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    padding: 2rem;
+    text-align: center;
+    border-radius: var(--radius);
+    position: sticky;
+    top: 80px;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    background: rgba(0,255,224,0.1);
+    border: 2px solid var(--accent);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-title);
+    font-size: 2rem;
+    color: var(--accent);
+    margin: 0 auto 1rem;
+    text-shadow: var(--glow);
+}
+
+.nombre {
+    font-size: 1.1rem;
+    margin-bottom: 0.4rem;
+}
+
+.correo {
+    color: var(--muted);
+    font-size: 0.85rem;
+    font-family: var(--font-mono);
+    margin-bottom: 1rem;
+    word-break: break-all;
+}
+
+.rol {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    color: var(--accent);
+    background: rgba(0,255,224,0.08);
+    border: 1px solid rgba(0,255,224,0.2);
+    padding: 0.2rem 0.8rem;
+    border-radius: 99px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* ── INFO ────────────────────────── */
+.section {
+    background: var(--card);
+    border: 1px solid var(--border);
+    padding: 1.5rem;
+    margin-bottom: 1.2rem;
+    border-radius: var(--radius);
+}
+
+.sectionTitle {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    color: var(--accent);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 1.2rem;
+}
+
+.infoGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.infoItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.9rem;
+}
+
+.infoItem:last-child { border-bottom: none; }
+
+.infoLabel { color: var(--muted); font-size: 0.85rem; }
+
+.infoValue { color: var(--text); font-weight: 500; }
+
+/* ── ACCIONES ────────────────────── */
+.acciones {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.btnOutline {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: var(--transition);
+    border-radius: var(--radius);
+    text-align: left;
+}
+
+.btnOutline:hover { border-color: var(--accent); color: var(--accent); }
+
+.btnDanger {
+    background: rgba(255,79,94,0.1);
+    border: 1px solid rgba(255,79,94,0.3);
+    color: var(--accent2);
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: var(--transition);
+    border-radius: var(--radius);
+    text-align: left;
+}
+
+.btnDanger:hover {
+    background: rgba(255,79,94,0.2);
+    border-color: var(--accent2);
+}
+
+.confirmar { display: flex; flex-direction: column; gap: 0.8rem; }
+.confirmar p { color: var(--muted); font-size: 0.85rem; }
+.confirmarBtns { display: flex; gap: 0.8rem; }
+.confirmarBtns button { flex: 1; }
+
+@media (max-width: 768px) {
+    .grid { grid-template-columns: 1fr; }
+    .card { position: static; }
+}

@@ -1,0 +1,50 @@
+.page {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.code {
+    font-family: var(--font-title);
+    font-size: 8rem;
+    font-weight: 900;
+    color: var(--accent);
+    text-shadow: var(--glow);
+    line-height: 1;
+    opacity: 0.3;
+}
+
+.titulo {
+    font-size: 1.8rem;
+}
+
+.desc {
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
+.btnHome {
+    background: var(--accent);
+    color: #000;
+    padding: 0.85rem 2rem;
+    font-weight: 800;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: var(--transition);
+    margin-top: 0.5rem;
+    border-radius: var(--radius);
+    display: inline-block;
+}
+
+.btnHome:hover { box-shadow: var(--glow); transform: translateY(-2px); }
